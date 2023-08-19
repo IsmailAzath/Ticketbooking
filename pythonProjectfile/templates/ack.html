@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>acknowledgement page</title>
+
+    <style>
+          body{
+           background-repeat:no-repeat;
+           background-attachment:fixed;
+           background-size:cover;
+
+           background-image:url({{url_for('static',filename='')}})
+        }
+         .container{
+                    top:50%;
+                    left:50%;
+                    position: absolute;
+                    transform:translate(-50%,-50%);
+
+         }
+         .card{
+
+
+
+         }
+          #button{
+              border-radius:20px;
+              padding:10px 20px;
+              background:dodgerBlue;
+              color:white;
+              margin-top:10px;
+              border:none;
+              outline:none;
+              margin-left:50px;
+         }
+          #button1{
+              border-radius:20px;
+              padding:10px 20px;
+              background:dodgerBlue;
+              color:white;
+              margin-top:10px;
+              border:none;
+              outline:none;
+              margin-left:50px;
+         }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+   <div class="card">
+                        <h1 style="color:green;">.....successfully submitted!!!</h1>
+
+    <button onclick = "window.location.href = 'http://127.0.0.1:5000/reg';" id="button">SignUp</span>  </button>
+    <button onclick = "window.location.href = 'http://127.0.0.1:5000/';"id="button1">Return to home</button>
+
+</div>
+    </div>
+</body>
+</html>

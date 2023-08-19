@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> BOOK MY MOVIE</title>
+
+     <style>
+          *
+          {
+          padding:0;
+          margin:0;
+          }
+         {
+          padding:0;
+          margin:0;
+          Box-sizing:border-Box;
+         }
+         body{
+              background-repeat:no-repeat;
+           background-attachment:fixed;
+           background-size:cover;
+           Box-sizing:border-Box;
+           font-family:Sans-Serif;
+
+           background-image:url({{url_for('static',filename='cbg.jpg')}})
+         }
+         .container
+         {
+             background:rgb(0,0,900);
+             text-align:center;
+         }
+         .container ul
+         {
+            display:inline-flex;
+            list-style:none;
+            color:#fff;
+         }
+         .container ul li
+         {
+             width:150;
+             margin:15px;
+             padding:15px;
+         }
+         .active,.container ul li:hover
+         {
+           background:#000080;
+           border-radius:3px;
+         }
+
+
+
+
+
+    </style>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <ul>
+
+         <li><a <button onclick="window.location.href ='http://127.0.0.1:5000/login';">Login</button></a> <i class="fa-duotone fa-user"></i></li>
+        <li><a <button onclick="window.location.href ='http://127.0.0.1:5000/reg';">Registor</button></a><i class="fa-solid fa-user"></i></li>
+
+    </ul>
+</div>
+
+</body>
+</html>

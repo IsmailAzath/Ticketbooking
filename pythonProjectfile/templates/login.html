@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+         <style>
+         *
+          {
+          padding:0;
+          margin:0;
+          }
+         {
+         padding:0;
+         margin:0;
+         Box-sizing:border-Box;
+         }
+           body
+           {
+           padding:0;
+           margin:0;
+           background-repeat:no-repeat;
+           background-attachment:fixed;
+           background-size:cover;
+
+           background-image:url({{url_for('static',filename='cbg.jpg')}})
+
+
+           }
+
+         .container{
+                    top:50%;
+                    left:50%;
+                    position: absolute;
+                    transform:translate(-50%,-50%);
+                    border-radius:10px;
+         }
+         .card{
+               padding:60px 40px 50px 40px;
+               background:rgb(102,178,255);
+               border-radius:10px;
+         }
+          #username{
+             width:200px;
+             border:none;
+             background:transparent;
+             border-bottom:1px solid white;
+             padding:6px;
+             margin-bottom:15px;
+             color:;black;
+             }
+          #password{
+             width:200px;
+             border:none;
+             background:transparent;
+             border-bottom:1px solid white;
+             padding:6px;
+             margin-bottom:15px;
+             color:;black
+          }
+
+
+
+         #button{
+              border-radius:20px;
+              padding:10px 20px;
+              background:dodgerBlue;
+              color:white;
+              margin-top:10px;
+              border:none;
+              outline:none;
+              margin-left:50px;
+         }
+         a{
+             font-size:13px;
+         }
+
+
+         .cont
+         {
+
+
+
+             background:rgb(102,178,255);
+             text-align:center;
+         }
+         .cont ul
+         {
+            display:inline-flex;
+            list-style:none;
+            color:#fff;
+         }
+         .cont ul li
+         {
+             width:150;
+             margin:15px;
+             padding:15px;
+         }
+         .active,.cont ul li:hover
+         {
+           background:#0000CC;
+           border-radius:3px;
+         }
+     </style>
+          <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+       <div class="card">
+
+                           ___LOGIN__
+          <form action = 'http://127.0.0.1:5000/booking' method="POST">
+               <p><input type="text" placeholder="username" name = "username" id="username"required></p>
+               <p><input type="password" placeholder="password" name = "password" id="password"required></p>
+               <a href="#">Forgot Password?</a></p>
+               <p><input type="submit" value = "login" id="button"></p>
+          </form>
+
+       </div>
+    </div>
+           <div class="cont">
+    <ul>
+
+         <li><a <button onclick="window.location.href ='http://127.0.0.1:5000/';">Home</button></a> <i class="fa-duotone fa-user"></i></li>
+        <li><a <button onclick="window.location.href ='http://127.0.0.1:5000/reg';">Registor</button></a><i class="fa-solid fa-user"></i></li>
+
+    </ul>
+</div>
+
+
+  </body>
+</html>
